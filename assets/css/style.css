@@ -70,12 +70,12 @@ nav {
 }
 
 /* Nav toggle */
-#nav-toggle:checked-nav {
+#nav-toggle:checked~nav {
     display: block;
 }
 
 #nav-toggle {
-    display: block;
+    display: none;
 }
 
 .nav-toggle-label {
