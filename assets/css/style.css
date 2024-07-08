@@ -1,14 +1,14 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/* Aterisk wildcard selector to ovveride default styles added by the browser */
+/* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* General style */
+/* General styles */
 body {
     min-height: 100vh;
     display: flex;
@@ -81,7 +81,8 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
-/* Main Content */
+
+/* Main content */
 main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
@@ -90,22 +91,22 @@ main {
 }
 
 /* Footer */
-    #social-networks {
-        text-align: center;
-        padding: 20px 0;
-        display: flex;
-        justify-content: none;
-    }
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
 
-    #social-networks i {
-                font-size: 160%;
-                padding: 5%;
-                color: #3a3a3a;
-    }
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-
     /* Header */
     nav {
         display: block;
@@ -113,9 +114,12 @@ main {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-    }#menu {
+    }
+
+    #menu {
         display: flex;
     }
+
     #menu > li {
         padding-left: 1rem;
     }
@@ -132,11 +136,12 @@ main {
 
     /* Main content */
     main {
-        /*Push main content down to accomodate larger header */
+        /* Push main content down to accommodate larger header */
         margin-top: 79px;
     }
 }
-/* Larger devices (laptops and desktops, 992 px and up) */
+
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a;
